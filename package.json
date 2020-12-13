@@ -5,12 +5,22 @@
   "license": "MIT",
   "scripts": {
     "watch": "tsc -w",
+    "dev": "nodemon dist/index.js",
     "run:js": "node dist/index.js",
-    "run:ts":"ts-node src/index.ts"
+    "run:ts": "ts-node src/index.ts",
+    "dev:ts": "nodemon --exec ts-node src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^14.14.13",
+    "nodemon": "^2.0.6",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^4.3.4",
+    "@mikro-orm/core": "^4.3.4",
+    "@mikro-orm/migrations": "^4.3.4",
+    "@mikro-orm/postgresql": "^4.3.4",
+    "pg": "^8.5.1"
   }
 }
