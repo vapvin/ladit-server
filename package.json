@@ -4,10 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "tsc -w",
+    "run:js": "node dist/index.js",
+    "run:ts":"ts-node src/index.ts"
   },
   "devDependencies": {
     "@types/node": "^14.14.13",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
 }
